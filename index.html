@@ -6,6 +6,10 @@
         
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="css/portfolio.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/portfolio.js"></script>
     </head>
     <body>
         <!-- Side navigation-->
@@ -14,13 +18,13 @@
                 <img src="./assets/mypic.jpeg" class="imagenav" alt="Avatar" style="width:100px">
             </span>
             <a href="#about">About Me</a>
-            <a href="#education">Education</a>
             <a href="#professional-experience">Professional Experience</a>
             <a href="#leadership-experience">Leadership Experience</a>
+            <a href="#education">Education</a>
             <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
             <a href="#involvement">Involvement</a>
             <a href="#awards">Awards</a>
-            <a href="#projects">Projects</a>
             <a href="#conferences">Conferences</a>
             <a href="#trainings-conducted">Trainings Conducted</a>
             <a href="#volunteering">Volunteering</a>
@@ -28,107 +32,445 @@
         <div class="main">
             <div class="header">
                 <h1>Samyoga Bhattarai</h1>
-                <a href="mailto:bhattaraisamyoga@gmail.com">bhattaraisamyoga@gmail.com</a>
+                <h4>Lakewood, Colorado <a href="mailto:bhattaraisamyoga@gmail.com">bhattaraisamyoga@gmail.com</a></h4>
             </div>
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2>About</h2>
+                <p>With 3 years of hands-on experience in backend development, application development, machine learning and DevOps, I am passionate about building secure, scalable and efficient software systems.
+                    I am recent graduate with master's degree in Computer Science, with a focus on machine learning, computer vision and biometric authentication.</p>
+                <p>During my academic and professional journey, I got the opportunity to work on my capabilities of solving real-world problems
+                     through the use of technology and software development. I am proficient in maintaining automated data pipelines and
+                      high-volume applications. My technical expertise includes leveraging AI and neural networks to optimize systems and enhance security, 
+                      particularly in projects like securing face recognition systems using locality-sensitive hashing.
+                </p>
+                <p>I am looking for full-time opporunities and I am eager to contribute to innovative solutions that not only advance technology but also
+                     create an impact in the real world.</p>
+            </section>
+
+                     
+
+            <!-- Professional Experience Section -->
+            <section id="experience" class="section">
+                <!-- Professional Experience Section -->
+                <div id="professional-experience" class="timeline-section">
+                    <h2>Professional Experience</h2>
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-item">
+                                <div class="timeline-title">
+                                    <span>Graduate Teaching Assistant</span>
+                                    <span class="timeline-date">Jan 2023 - Dec 2024</span>
+                                </div>
+                                <p>The University of Kansas | Lawrence, Kansas</p>
+                                <ul class="timeline-note">
+                                    <li>Taught Calculus I to 128 undergraduates in the Mathematics Department</li>
+                                    <li>Taught General Physics Laboratory to 108 undergraduates in Physics and Astronomy Department</li>      
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-item">
+                                <div class="timeline-title">
+                                    <span>Software Engineer</span>
+                                    <span class="timeline-date">Sep 2019 - June 2022</span>
+                                </div>
+                                <p>Kathmandu Living Labs | Kathmandu, Nepal</p>
+                                <ul class="timeline-note">
+                                    <li>Governed 3 projects from initial stakeholder collaboration and requirements documentation to full production deployment, 
+                                        incorporating both functional and non-functional specifications</li>
+                                    <li>Generated detailed technical specifications and architecture documents for 4 projects, shaping the design of software components, 
+                                        modules, and systems aligned with system design principles</li> 
+                                    <li>Successfully planned, designed and built more than 30 REST APIs using Django and Nodejs for several projects, 
+                                        and upheld server-side components of web applications</li>
+                                    <li>Developed containerized applications using Docker and implemented CI/CD pipelines, improving software deployment efficiency by 30%</li>
+                                    <li>Managed 2 servers and 3 databases for applications and handled database operations while cooperatively working with cross-functional team
+                                        for data preprocessing and analysis of geospatial data required for projects</li>
+                                    <li>Created and maintained technical documentation, including user manuals, code and system documentation for 4 projects. to facilitate understanding and future maintenance </li>      
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-item">
+                                <div class="timeline-title">
+                                    <span>Android Application Development Intern</span>
+                                    <span class="timeline-date">Apr 2019 - Jul 2019</span>
+                                </div>
+                                <p>Kathmandu Living Labs | Kathmandu, Nepal</p>
+                                <ul class="timeline-note">
+                                    <li>Cultivated a deep comprehension and a solid foundation for constructing Android applications</li>
+                                    <li>Successfully built an android app, Vidya, as students-teachers' communication app for a school for above 500 users</li>
+                                    <li>Worked with the team in designing layouts and implementing APIs in android (Java)</li>
+                                    <li>Implemented MVVM (Model-View-ViewModel) architecture in android and improved the performance of app by 40%</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Leadership Experience Section -->
+                <div id="leadership-experience" class="timeline-section">
+                    <h2>Leadership Experience</h2>
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-item">
+                                <div class="timeline-title">
+                                    <span>Co-Founder/Research Lead</span>
+                                    <span class="timeline-date">Mar 2020 - Dec 2022</span>
+                                </div>
+                                <p>Safer-I | Lalitpur, Nepal</p>
+                                <ul class="timeline-note">
+                                    <li>Successfully made strategic decisions for the team and provided strategic direction to 2 major research projects</li>
+                                    <li>Conducted various training related to digital hygiene and data security in 5 different provinces of Nepal and 
+                                        we had above 950 direct beneficiaries and 27,500 online beneficiaries</li>      
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-item">
+                                <div class="timeline-title">
+                                    <span>Mentorship Strategic Manager</span>
+                                    <span class="timeline-date">June 2020 - Oct 2022</span>
+                                </div>
+                                <p>Women Leaders in Technology | Lalitpur, Nepal</p>
+                                <ul class="timeline-note">
+                                    <li>Effectively lead mentorship program: Six-month program where 15 fellows are paired with 15 mentors</li>
+                                    <li>Authored and disseminated mentorship curriculum through self-driven initiatives to fit the growth stage of the fellows</li> 
+                                    <li>Monitored, evaluated, and strategized the progress of the mentorship program</li>
+                                    <li>Made strategic decisions, planned and conducted around 3 - 5 programs every year within and related to the organization</li>      
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>    
             
-            <section id="about">I am a second-year Computer Science master's student at University of Kansas, where my focus lies on gaining skills on fundamental algorithms 
-                for development, data security, machine learning and computer vision. I am currently doing a research on securing biometric systems using blockchain. 
-            </section>
-            <section id="education">
-                Masters in Computer Science 	                   Aug 2022 - present
-                The University of Kansas | Lawrence, Kansas                                                                                          (Expected graduation May 2024)
-                Bachelors In Computer Engineering (B.E)	     2015-2019
-                Tribhuvan University, Institute of Engineering | Kathmandu, Nepal
+            <!-- Education Section -->
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-item">
+                            <div class="timeline-title">
+                                <span>Masters in Computer Science</span>
+                                <span class="timeline-date">Aug 2022 - Dec 2024</span>
+                            </div>
+                            <p>The University of Kansas | Lawrence, Kansas</p>
+                            <p class="timeline-note">Relevant coursework: Data Mining, Machine Learning, Algorithms for High-Performance Computing, Computer Vision</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-item">
+                            <div class="timeline-title">
+                                <span>Bachelors in Computer Engineering (B.E)</span>
+                                <span class="timeline-date">2015 - 2019</span>
+                            </div>
+                            <p>Tribhuvan University, Institute of Engineering | Kathmandu, Nepal</p>
+                            <p class="timeline-note">Relevant coursework: Enterprise Application Design and Development</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>   
 
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Development and Programming</h3>
+                        <p>Backend development, Android application development (Android SDK), Agile development, Web Development, REST API, JSON, Linux environment, Shell scripting (Bash)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <p>Python, NodeJS, Java, C, C++, C#, JavaScript, React Native, QBASIC, R, MATLAB</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Frameworks</h3>
+                        <p>Django (Python), Express (NodeJS), Spring Boot (Java), .NET framework (C#), HTML, MVC, MVVM</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>AI and Machine Learning</h3>
+                        <p>Computer vision, machine learning, deep learning, natural language processing (NLP), data preprocessing, feature extraction, model optimization, TensorFlow, PyTorch, OpenCV, scikit-learn</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Big Data Technologies</h3>
+                        <p>Data processing with PostgreSQL, MySQL, SQL, T-SQL, MongoDB, QuestDB, ElasticSearch</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps Practices</h3>
+                        <p>Jenkins, Kubernetes, Docker, CI/CD, Version Control (GIT, GitHub)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Testing Tools and Methods</h3>
+                        <p>Performance testing, Load testing, Software debugging and testing, JMeter</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Software Development Tools</h3>
+                        <p>Code Editors and IDE (VS Code, PyCharm, Sublime, Android Studio, R Studio, VIM), Maven, Gradle</p>
+                    </div>
+                </div>
             </section>
-            <section id="professional-experience">
-                Graduate Teaching Assistant | The University of Kansas, Lawrence, KS	 	                                       Jan 2023 - present
-                Teaching General Physics Laboratory to 54 undergraduates in Physics and Astronomy Department (Jan 2024 - present)
-                Taught Calculus I to 57 undergraduates in the Mathematics Department (August 2023 - December 2023)	
-                Taught General Physics Laboratory to 54 undergraduates in Physics and Astronomy Department (Jan 2023 - May 2023)
-                Software Engineer | Kathmandu Living Labs, Kathmandu, Nepal	                                                   	    Sep 2019 - Jun 2022                        
-                Collaborate with stakeholders to gather and document software requirements, encompassing both functional and non-functional aspects.
-                Generate detailed technical specifications and architecture documents, shaping the design of software components, modules, and systems aligned with specified requirements.
-                Planned, designed and built REST APIs, and upheld the server-side components of web applications, encompassing dockerization and the automation of CI/CD deployment
-                Managed server and databases for the applications and handled database operations
-                Performed data preprocessing and analysis of geospatial data required for projects
-                Governed couple projects from conceptualization to deployment in production
-                Create and maintain technical documentation, including user manuals and system documentation.
-                Document code to facilitate understanding and future maintenance.
-                Android Application Development Intern | Kathmandu Living Labs, Kathmandu, Nepal	              		     Apr 2019 - Jul 2019
-                Cultivated a deep comprehension and a solid foundation for constructing Android applications.
-                Successfully built an android app named Vidya to be used as students-teachers’ communication app for a school
-                Worked with the team in designing layouts and implementing APIs in android (Java)
-                Explored and implemented MVVM (Model-View-ViewModel) architecture in android for the same
+            
 
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                  <div class="project-card">
+                    <div class="project-header">
+                      <h3>PRO-ID</h3>
+                      <button class="toggle-details">Details</button>
+                    </div>
+                    <p>A secure face recognition system using Locality Sensitive Hashing to Protect Human ID</p>
+                    <div class="details hidden">
+                      <ul>
+                        <li>A computer vision project as a part of Master's research project</li>
+                        <li>Designed a biometric system that enrolls and verifies users based on their face biometric data.</li>
+                        <li>Implemented SimHash, a variant of Locality Sensitive Hashing (LSH) technique to ensure security.</li>
+                        <li>Link to the project codebase: <a href="https://github.com/samyoga/BioAuth-with-LSH">PRO-ID</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="project-card">
+                    <div class="project-header">
+                      <h3>Weather Prediction</h3>
+                      <button class="toggle-details">Details</button>
+                    </div>
+                    <p>Machine learning project to predict weather using time series forecasting</p>
+                    <div class="details hidden">
+                      <ul>
+                        <li>Utilized various machine learning algorithms such as Decision Trees, Random Forests, KNN, Naive Bayes, Logistic Regression etc. 
+                            to learn patterns and relationships between various feature attributes in the dataset such as temperature, precipitation, 
+                            wind speed used to predict weather conditions based on location and time </li>
+                        <li>Evaluated performance using several evaluation metrics such as accuracy score and confusion matrix</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="project-card">
+                    <div class="project-header">
+                      <h3>Fake Review Detection</h3>
+                      <button class="toggle-details">Details</button>
+                    </div>
+                    <p>Information retrieval project to design and implement a fake review detection system using modern machine learning techniques</p>
+                    <div class="details hidden">
+                      <ul>
+                        <li>Extracted features such as sentiment analysis, linguistic patterns and user behavior</li>
+                        <li>Made use of machine learning algorithms such as Decision Trees, Random Forest and Support Vector Machines to detect fake and fraudulent reviews</li>
+                        <li>The model accuracy was evaluated using performance metrics such as precision, recall and F1-score</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="project-card">
+                    <div class="project-header">
+                      <h3>i-med Mongolia Health Portal</h3>
+                      <button class="toggle-details">Details</button>
+                    </div>
+                    <p>Web and mobile application that administers details of various health service facilities in Mongolia as a part of C2M2 (Cities Covid-19 Mitigation Mapping) project</p>
+                    <div class="details hidden">
+                      <ul>
+                        <li>Explicated and built backend system architecture designs for the health portal</li>
+                        <li>Queried OpenStreetMap data using overpass API, use of various tools and libraries for working with OSM data</li>
+                        <li>Built REST APIs to serve required data to the mobile and web client in NodeJS</li>
+                        <li>Implemented Docker, CI/CD for containerization and automation deployment of the application</li>
+                        <li>Handled optimization, deployment and server-side management of the application</li>
+                        <li>The link to the web version is: <a href="https://www.i-med.mn/">www.i-med.mn</a> and the link to the mobile version (android) is: <a href="https://play.google.com/store/apps/details?id=kll.c2m2.c2m2_mongolia&hl=gsw">google play i-med</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="project-card">
+                    <div class="project-header">
+                      <h3>C2M2 Kathmandu Tourism Portal</h3>
+                      <button class="toggle-details">Details</button>
+                    </div>
+                    <p>A web portal that helps visualize tourism data from the survey during covid-19, built with the aim to help expedite the tourism stakeholders to revive the tourism industry</p>
+                    <div class="details hidden">
+                      <ul>
+                        <li>Collected tourism industry data from 'Geonight:2021' event and contributed it to the OSM community</li>
+                        <li>Analyzed, cleaned, and processed data using R in RStudio to meet project requirements</li>
+                        <li>Designed REST API structures for data visualization and built them using Django</li>
+                        <li>Implemented Docker and CI/CD for containerization and automated application deployment, including server-side management</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="project-card">
+                    <div class="project-header">
+                      <h3>Nilkantha Data Portal</h3>
+                      <button class="toggle-details">Details</button>
+                    </div>
+                    <p>Data portal to help visualize survey responses regarding infrastructure and facilities of Nilkantha municipality of Dhading district in Nepal</p>
+                    <div class="details hidden">
+                      <ul>
+                        <li>Carried out data analysis, cleaning and processing it into required data structure in RStudio using R</li>
+                        <li>Performed conceptualizing and designing API structures for data visualization and building APIs in Django, docker implementation</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="project-card">
+                    <div class="project-header">
+                      <h3>Vidya Mobile Application</h3>
+                      <button class="toggle-details">Details</button>
+                    </div>
+                    <p>Mobile application to connect students, guardians, and teachers digitally along with keeping the guardians updated about their children's progress and important notices at school</p>
+                    <div class="details hidden">
+                      <ul>
+                        <li>Worked with the team in designing layouts and implementing APIs in android (Java)</li>
+                        <li>Explored and implemented MVVM (Model-View-ViewModel) architecture in android for the same</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="project-card">
+                    <div class="project-header">
+                      <h3>Sanketic Lipi</h3>
+                      <button class="toggle-details">Details</button>
+                    </div>
+                    <p>An android application to convert the Nepali Sign Language (NSL) into Nepali text and Nepali voice output</p>
+                    <div class="details hidden">
+                      <ul>
+                        <li>Major project completed during the final year of undergraduate school</li>
+                        <li>Designed layouts and implemented trained datasets computation in android (Java)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="project-card">
+                    <div class="project-header">
+                      <h3>Email On Voice</h3>
+                      <button class="toggle-details">Details</button>
+                    </div>
+                    <p>A web-based application in Django for composing, sending, and receiving emails via voice</p>
+                    <div class="details hidden">
+                      <ul>
+                        <li>Award-winning project. Won 'The Best Idea Award' in a code camp hosted by LIS Nepal</li>
+                        <li>Minor project completed during the final year of undergraduate school</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
             </section>
-            <section id="leadership-experience">
-                Public Relations and Marketing Chair | Graduate Engineering Association, The University of Kansas	       Oct 2023 - present
-                Chair the marketing programs for events hosted by 5 committees within the association. 
-                Monitor and design the posters, flyers, pamphlets to publish on social media and disseminate within the university.
-                Content Designer | Nepalese Student Association, The University of Kansas				   Aug 2022 - Aug 2023
-                Design flyers, posters, banners for events organised by the Nepalese community
-                Co-Founder/Research Lead | Safer-I, Lalitpur, Nepal			                      		  Mar 2020 - Dec 2022                                                          
-                Make strategic decisions for the team and provide strategic direction to major research projects
-                Conduct various training related to digital hygiene, data security etc
-                Write up research findings and oversee publication processes 
-                Mentorship Strategic Manager |	Women Leaders in Technology, Lalitpur, Nepal	                                    Jun 2020 - Oct 2022
-                Lead mentorship program: Six month program where 15 fellows during their fellowship were paired with 15 mentors
-                Authored and disseminated mentorship curriculum to fit the growth stage of the fellows
-                Monitored, evaluated, and strategized the progress of the mentorship  program
-                Made strategic decisions, planned and conducted programs within and related to the organization
-
-            </section>
-            <section id="skills">
-                Development : Backend development, Android application development, Agile development
-                Programming languages : Python, NodeJS, Java, Flutter, C, C++, Javascript, QBASIC, R
-                Web framework : Django with Python, Express with NodeJS, Springboot with Java, HTML5
-                Databases : PostgreSQL, MySQL, MongoDB, QuestDB
-                DevOps practices : Jenkins, Kubernetes, Docker, CI/CD
-                Testing tools and methods : Performance testing, Load testing, Jmeter
-
-            </section>
-            <section id="involvement">
-                She Leads She Inspires Fellowship 2021-22 				                                    	    Jan 2022 – Jun 2022
-                Awarded 6 month fellowship among 100 women working in the OSM ecosystem to foster future women leaders
-                Initiated and lead a humanitarian / development project, using GIS and technical mapping skills
-                Women Leaders in Technology (WLiT) Fellowship 2018-19 		                                    		   Oct 2018 – Apr 2019
-                Awarded annual 6 month fellowship among 16 female students of technology in Kathmandu
-                Received training on Javascript, leadership, and public speaking sessions including design thinking
-                Accomplished development of web app, AAWAAJ, to help track all kinds of movements against sexual harassment	
-
-            </section>
-            <section id="awards">
-                Best Idea Award for ‘Email on voice’ in the Yomari Code Camp, Hosted by LIS Nepal Pvt.Ltd.
-                Winner of Sujata Baskota Changemaker Award, Hosted by Women Lead Nepal
-                Generation Unlimited Youth Challenge, Hosted by UNICEF Nepal, UNDP, and Tyrocity
-                Our team was awarded as one of the promising ideas in Generation Unlimited Youth Challenge in the first phase
-                In the second phase, we got selected among top 2 best ideas and had the opportunity to represent the team globally
-
-            </section>
-            <section id="projects">
               
 
+            <!-- Involvement Section -->
+            <section id="involvement" class="section">
+                <h2>Involvement</h2>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-item">
+                            <div class="timeline-title">
+                                <span>Graduate Engineering Association</span>
+                                <span class="timeline-date">Sep 2023 - Dec 2024</span>
+                            </div>
+                            <ul class="timeline-note">
+                                <li>Served as a Public Relations and Marketing Chair for the year 2023. Successfully led communication and promotional initiatives, enhancing organizational outreach and engagement</li>
+                                <li>Awarded total of $700 on the year 2023 and $1200 on the year 2024</li> 
+                                <li>Actively organized and participated in events, fostering collaboration and representing the organization in various capacities as a graduate engineering ambassador</li>      
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-item">
+                            <div class="timeline-title">
+                                <span>She Leads She Inspires Fellowship 2021-22</span>
+                                <span class="timeline-date">Jan 2022 - June 2022</span>
+                            </div>
+                            <ul class="timeline-note">
+                                <li>Awarded 6 month fellowship among 100 women working in the OSM ecosystem to foster future women leaders</li>
+                                <li>Initiated and lead a humanitarian / development project, using GIS and technical mapping skills</li>   
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-item">
+                            <div class="timeline-title">
+                                <span>Women Leaders in Technology (WLiT) Fellowship 2018-19</span>
+                                <span class="timeline-date">Oct 2018 - Apr 2019</span>
+                            </div>
+                            <ul class="timeline-note">
+                                <li>Awarded 6 month fellowship among 100 women working in the OSM ecosystem to foster future women leaders    Awarded annual 6-month fellowship among 16 female students of technology in Kathmandu</li>
+                                <li>Received training on JavaScript, leadership, and public speaking sessions including design thinking</li>
+                                <li>Accomplished development of web app, AAWAAJ, to help track all kinds of movements against sexual harassment</li>   
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </section>
-            <section id="conferences">
-                Panellist at a Talk Show on ‘Girls in STEM’, hosted by TechTrix (Jul 17, 2022)
-                Panellist at a session ‘Importance Of Effective Mentorship For Girls in STEM’, hosted by Smart Cheli (Oct 23, 2021)
-                Hosted discussion session on ‘Women using Data and Tech for Problem Solving’ at Women in Data Conference (Mar 20, 2021)
-                Speaker at Google Developers Fest - 2019, ‘The use and importance of MVVM architecture in android’ (Nov 23, 2019)
 
+            <!-- Awards Section -->
+            <section id="awards" class="section">
+                <h2>Awards</h2>
+                <ul class="awards-list">
+                    <li>Third Position at 7th Workshop for Women in Hardware and System Security, for research project PRO-ID (2024)</li>
+                    <li>Generation Unlimited Youth Challenge, Hosted by UNICEF Nepal, UNDP, and Tyrocity (2020)
+                        <ul><li>Awarded as one of the promising ideas in Generation Unlimited Youth Challenge in the first phase</li>
+                        <li>Got selected among top 2 best ideas with a cash prize of NPR 100,000 and represented the team globally</li></ul>
+                    </li>
+                    <li>Winner of Sujata Baskota Changemaker Award, Hosted by Women Lead Nepal (2019)</li>
+                    <li>Best Idea Award for 'Email on voice' in the Yomari Code Camp, Hosted by LIS Nepal Pvt.Ltd. (2018)</li>
+                </ul>
             </section>
-            <section id="trainings-conducted">
-                Hour Of Code | 17th February 2019
-                Hosted Hour Of Code at Columbus College for the Computer Science students of Management Stream of grade XI and XII
-                Digital Hygiene Workshop | 26th March 2021
-                Hosted a Digital Hygiene Workshop at OWN IT Nepal 2021 hosted by Women Lead Nepal
-                Web designing training, 10 days coding session | 25th to 31st July, 2021
-                Hosted a 10 days coding session for 40 female students organized by Code To Grow together with Stree In Stem (SIS)
-            </section>
-            <section id="volunteering">
-                At Bhawisya-STEAM CHALLENGE organized by the Ministry of Education, Science and Technology and Karkhana, Nepal (Feb 23, 2019)
-                In a workshop, ‘Safer Internet and Data Security’ at OWN IT organized by Women Lead Nepal (30th March 2019)
 
+            <!-- Trainings Conducted Section -->
+            <section id="trainings" class="section">
+                <h2>Trainings Conducted</h2>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-item">
+                            <div class="timeline-title">
+                                <span>Hour of Code</span>
+                                <span class="timeline-date">17th Feb 2019</span>
+                            </div>
+                            <p>Hosted Hour Of Code at Columbus College for the Computer Science students of Management Stream of grade XI and XII</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-item">
+                            <div class="timeline-title">
+                                <span>Digital Hygiene Workshop</span>
+                                <span class="timeline-date">26th Mar 2021</span>
+                            </div>
+                            <p>Hosted a Digital Hygiene Workshop at OWN IT Nepal 2021 hosted by Women Lead Nepal</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-item">
+                            <div class="timeline-title">
+                                <span>Web designing training, 10 days coding session</span>
+                                <span class="timeline-date">25th July - 31st July, 2021</span>
+                            </div>
+                            <p>Hosted a 10 days coding session for 40 female students organized by Code To Grow together with Stree In Stem (SIS)</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Conferences Section -->
+            <section id="conferences" class="section">
+                <h2>Conferences</h2>
+                <ul class="awards-list">
+                    <li>Student Panellist at a session 'Role of Women in Harwdare and System Security', hosted by WISE at 7th Workshop for Women in Hardware and System Security (Nov 22, 2024)</li>
+                    <li>Student Panellist at an event for newly accepted graduate students, hosted by Graduate Engineering Association, KU (Feb 22, 2024)</li>
+                    <li>Panellist at a Talk Show on 'Girls in STEM', hosted by TechTrix (Jul 17, 2022)</li>
+                    <li>Panellist at a session 'Importance Of Effective Mentorship For Girls in STEM', hosted by Smart Cheli (Oct 23, 2021)</li>
+                    <li>    Hosted discussion session on 'Women using Data and Tech for Problem Solving' at Women in Data Conference (Mar 20, 2021)</li>
+                    <li>Speaker at Google Developers Fest - 2019, 'The use and importance of MVVM architecture in android' (Nov 23, 2019)</li>
+                </ul>
+            </section>
+
+            <!-- Volunteering Section -->
+            <section id="volunteering" class="section">
+                <h2>Volunteering</h2>
+                <ul class="awards-list">
+                    <li>Bhawisya-STEAM CHALLENGE organized by Ministry of Education, Science and Technology and Karkhana, Nepal (Feb 23, 2019)</li>
+                    <li>'Safer Internet and Data Security' workshop at OWN IT organized by Women Lead Nepal (30th March 2019)</li>
+                </ul>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out via email.</p>
+                <div class="social-links">
+                    <a href="mailto:bhattaraisamyoga@gmail.com" class="button">Email Me</a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
             </section>
         </div>
     </body>
